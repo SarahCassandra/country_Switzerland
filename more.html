@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Destinations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+        body {
+            overflow-x: hidden;
+            background-color: rgb(129, 129, 129);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #000000 !important;
+            text-shadow: 0 0 15px #000000, 0 0 25px #ffffff;
+            transform: scale(1.05);
+        }
+
+        .navbar {
+            transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+        }
+
+        .navbar:hover {
+            background-color: rgba(0, 0, 0, 0.6) !important;
+            backdrop-filter: blur(8px);
+        }
+
+        [id] {
+            scroll-margin-top: 100px !important;
+        }
+    </style>
+
+<body>
+    <nav id="nav"
+        class="navbar nav navbar-expand-md navbar-dark bg-transparent fixed-top z-3 m-0 py-2 text-light shadow-sm">
+        <div class="container-fluid">
+            <img src="flag.jpg" alt="Switzerland Flag" class="img-fluid" style="max-height:30px; margin-right:10px;">
+            <a class="navbar-brand fw-bold" href="#">Switzerland</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-dark" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item pe-3"><a class="nav-link" href="index.html">Back to Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container p-3 my-5 rounded">
+        <h1 id="destination">DESTINATIONS</h1>
+        <div class="row row-cols-1 row-cols-lg-2 g-4">
+            <div class="col">
+                <div class="card mb-3 mt-2">
+                    <img src="pic4.jpg" class="card-img-top" alt="GRINDELWALD">
+                    <div class="card-body">
+                        <h2 id="grindelwald" class="card-title">GRINDELWALD</h2>
+
+                        <p><strong>Overview:</strong><br>
+                            Grindelwald is a cozy alpine village in the Bernese Oberland, surrounded by the dramatic
+                            peaks of the Eiger. It offers both peaceful scenery and exciting mountain adventures, making
+                            it a perfect destination all year round.
+                        </p>
+
+                        <p><strong>Highlights:</strong></p>
+                        <ul>
+                            <li>Eiger North Face</li>
+                            <li>First Cliff Walk by Tissot</li>
+                            <li>Panoramic hiking trails</li>
+                            <li>Cable car mountain viewpoints</li>
+                        </ul>
+
+                        <p><strong>Best Time to Visit:</strong><br>
+                            Summer (June–September) for hiking and lake trails <br>
+                            Winter (December–March) for skiing and snow adventures
+                        </p>
+
+                        <p><strong>Top Things To Do:</strong></p>
+                        <ul>
+                            <li>Take the cable car to Grindelwald First</li>
+                            <li>Try the First Flyer zip line</li>
+                            <li>Hike to Bachalpsee Lake</li>
+                            <li>Enjoy skiing or snowboarding in winter</li>
+                        </ul>
+                        <p class="card-text">
+                            <small class="text-body-secondary"><strong>Recommended Stay:</strong> 2–3 days</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 mt-2">
+                    <img src="pic3.jpg" class="card-img-top" alt="BERN">
+                    <div class="card-body">
+                        <h2 id="bern" class="card-title">BERN</h2>
+
+                        <p><strong>Overview:</strong><br>
+                            Bern, the capital of Switzerland, is known for its medieval charm and beautifully preserved
+                            Old Town, a UNESCO World Heritage Site. Its riverside views, cobblestone streets, and
+                            relaxed pace make it a warm and welcoming city.
+                        </p>
+
+                        <p><strong>Highlights:</strong></p>
+                        <ul>
+                            <li>The Zytglogge Clock Tower</li>
+                            <li>Bear Park</li>
+                            <li>Federal Palace</li>
+                            <li>Aare River viewpoints</li>
+                        </ul>
+
+                        <p><strong>Best Time to Visit:</strong><br>
+                            May to September for pleasant walking weather
+                        </p>
+
+                        <p><strong>Top Things To Do:</strong></p>
+                        <ul>
+                            <li>Walk along the Old Town arcade</li>
+                            <li>Watch the astronomical clock show</li>
+                            <li>Enjoy sunset by the Aare River</li>
+                            <li>Visit the Einstein House</li>
+                        </ul>
+                        <p class="card-text">
+                            <small class="text-body-secondary"><strong>Recommended Stay:</strong> 1–2 days</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 mt-2">
+                    <img src="pic2.jpg" class="card-img-top" alt="ENGELBERG">
+                    <div class="card-body">
+                        <h2 id="engelberg" class="card-title">ENGELBERG</h2>
+
+                        <p><strong>Overview:</strong><br>
+                            Engelberg is a picturesque village surrounded by towering mountains and peaceful green
+                            valleys. It's the home of Mount Titlis, known for its breath-taking glacier views and
+                            rotating cable car experience.
+                        </p>
+
+                        <p><strong>Highlights:</strong></p>
+                        <ul>
+                            <li>Mount Titlis</li>
+                            <li>Cliff Walk Suspension Bridge</li>
+                            <li>Alpine lakes and forests</li>
+                        </ul>
+
+                        <p><strong>Best Time to Visit:</strong>
+                            Year-round, especially December–April for snow activities
+                        </p>
+
+                        <p><strong>Top Things To Do:</strong></p>
+                        <ul>
+                            <li>Ride the Titlis Rotair cable car</li>
+                            <li>Walk on the Titlis Glacier Bridge</li>
+                            <li>Enjoy scenic hiking or biking</li>
+                        </ul>
+                        <p class="card-text">
+                            <small class="text-body-secondary"><strong>Recommended Stay:</strong> 1–2 days</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 mt-2">
+                    <img src="pic11.jpg" class="card-img-top" alt="ZURICH">
+                    <div class="card-body">
+                        <h2 id="zurich" class="card-title">ZÜRICH</h2>
+
+                        <p><strong>Overview:</strong><br>
+                            Zürich blends modern sophistication with historical elegance. It's the cultural and
+                            financial heart of Switzerland, sitting peacefully beside the clear waters of Lake Zürich.
+                        </p>
+
+                        <p><strong>Highlights:</strong></p>
+                        <ul>
+                            <li>Old Town (Altstadt)</li>
+                            <li>Lake Zürich promenades</li>
+                            <li>Bahnhofstrasse shopping street</li>
+                        </ul>
+
+                        <p><strong>Best Time to Visit:</strong>
+                            May to September for lakeside walks and boat trips
+                        </p>
+
+                        <p><strong>Top Things To Do:</strong></p>
+                        <ul>
+                            <li>Take a boat cruise on Lake Zürich</li>
+                            <li>Explore Niederdorf old town alleys</li>
+                            <li>Visit art museums like Kunsthaus Zürich</li>
+                        </ul>
+                        <p class="card-text">
+                            <small class="text-body-secondary"><strong>Recommended Stay:</strong> 1–3 days</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 mt-2">
+                    <img src="pic5.jpg" class="card-img-top" alt="LUCERNE">
+                    <div class="card-body">
+                        <h2 id="lucerne" class="card-title">LUCERNE</h2>
+
+                        <p><strong>Overview:</strong><br>
+                            Lucerne is surrounded by breathtaking scenery, combining medieval charm with calm lakeside
+                            beauty. It is one of Switzerland’s most scenic and romantic destinations. </p>
+
+                        <p><strong>Highlights:</strong></p>
+                        <ul>
+                            <li>Chapel Bridge</li>
+                            <li>Lion Monument</li>
+                            <li>Lake Lucerne</li>
+                            <li>Mount Pilatus & Rigi nearby</li>
+                        </ul>
+
+                        <p><strong>Top Things To Do:</strong></p>
+                        <ul>
+                            <li>Walk along the Chapel Bridge</li>
+                            <li>Take a lake cruise</li>
+                            <li>Ride the cable car to Mt. Pilatus</li>
+                        </ul>
+                        <p class="card-text">
+                            <small class="text-body-secondary"><strong>Recommended Stay:</strong> 1–2 days</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 mt-2">
+                    <img src="pic1.jpg" class="card-img-top" alt="GENEVA">
+                    <div class="card-body">
+                        <h2 id="geneva" class="card-title">GENEVA</h2>
+
+                        <p><strong>Overview:</strong><br>
+                            Geneva is a refined lakeside city known as an international diplomatic center. It blends
+                            nature, culture, and global influence beautifully. </p>
+
+                        <p><strong>Highlights:</strong></p>
+                        <ul>
+                            <li>Jet d’Eau Fountaine</li>
+                            <li>United Nations Headquarters</li>
+                            <li>Lake Geneva promenade</li>
+                        </ul>
+
+                        <p><strong>Top Things To Do:</strong></p>
+                        <ul>
+                            <li>Visit the UN Palace</li>
+                            <li>Explore the waterfront parks</li>
+                            <li>Take a boat to Montreux or Lausanne</li>
+                        </ul>
+                        <p class="card-text">
+                            <small class="text-body-secondary"><strong>Recommended Stay:</strong> 1–2 days</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-3 mt-2">
+                    <img src="pic6.jpg" class="card-img-top" alt="JUNGFRAUJOCH">
+                    <div class="card-body">
+                        <h2 id="jungfraujoch" class="card-title">JUNGFRAUJOCH – “TOP OF EUROPE”</h2>
+
+                        <p><strong>Overview:</strong><br>
+                            Jungfraujoch is one of the highest accessible points in Europe and offers striking snow
+                            views all year round. It is truly a once-in-a-lifetime experience.</p>
+
+                        <p><strong>Highlights:</strong></p>
+                        <ul>
+                            <li>Ice Palace</li>
+                            <li>Sphinx Observatory</li>
+                            <li>Panoramic glacier views</li>
+                        </ul>
+
+                        <p class="card-text">
+                            <small class="text-body-secondary"><strong>Recommended Stay:</strong> Half-day visit from
+                                Grindelwald or Lauterbrunnen</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-1 mt-2">
+                    <img src="pic10.jpg" class="card-img-top" alt="LAUTERBRUNNEN">
+                    <div class="card-body">
+                        <h2 id="lauterbrunnen" class="card-title">LAUTERBRUNNEN</h2>
+
+                        <p><strong>Overview:</strong><br>
+                            Lauterbrunnen sits in a stunning valley surrounded by 72 waterfalls. The landscape feels
+                            fairytale-like and serene, perfect for photography and nature walks.</p>
+
+                        <p><strong>Highlights:</strong></p>
+                        <ul>
+                            <li>Staubbach Falls</li>
+                            <li>Trümmelbach Falls</li>
+                            <li>Access to Wengen and Mürren</li>
+                        </ul>
+
+                        <p class="card-text">
+                            <small class="text-body-secondary"><strong>Recommended Stay:</strong>1-2 days</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1 id="SeeMore" class="font text-dark">GALLERY </h1>
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card text-white">
+                    <img src="pic0.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white">
+                    <img src="pic1.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white">
+                    <img src="pic2.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white">
+                    <img src="pic3.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white">
+                    <img src="pic4.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white">
+                    <img src="pic5.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white">
+                    <img src="pic6.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white">
+                    <img src="pic7.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white">
+                    <img src="pic8.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white">
+                    <img src="pic9.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white">
+                    <img src="pic10.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-white">
+                    <img src="pic11.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid z-3 m-2 p-2 g-0 bg-transparent text-dark">
+        <h6 class="mb-3 p-3 text-center">© 2025 Sarah Cassandra Macalilong |
+            © TRAVEL + LEISURE ASIA | © Top Travel | All Rights Reserved</h6>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
