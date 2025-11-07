@@ -123,6 +123,36 @@
         z-index: 2;
     }
 
+    .container-fluid {
+        overflow: hidden;
+    }
+
+    .carousel-item video {
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .title-overlay {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        z-index: 10;
+    }
+
+    .title-overlay h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        text-shadow: 0 0 20px rgba(0, 0, 0, .7);
+    }
+
+    .title-overlay a {
+        margin-top: 20px;
+    }
+
+
     .card {
         transition: transform 0.4s ease, box-shadow 0.4s ease;
         cursor: pointer;
@@ -169,50 +199,47 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid p-0 z-0 mt-0 g-0">
-        <div class="row">
-            <div class="col">
-                <div class="title-container">
-                    <div class="title">SWITZERLAND</div>
-                    <a href="#about" class="title-btn">Explore More</a>
+    <div class="container-fluid p-0 position-relative">
+        <div class="carousel slide" id="carouselExampleAutoplaying" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video autoplay muted loop playsinline preload="metadata" src="vid4.mp4"
+                        class="d-block w-100"></video>
                 </div>
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <video autoplay muted loop playsinline preload="metadata" src="vid4.mp4"
-                                class="d-block w-100"></video>
-                        </div>
-                        <div class="carousel-item">
-                            <video autoplay muted loop playsinline preload="metadata" src="vid3.mp4"
-                                class="d-block w-100"></video>
-                        </div>
-                        <div class="carousel-item">
-                            <video autoplay muted loop playsinline preload="metadata" src="vid2.mp4"
-                                class="d-block w-100"></video>
-                        </div>
-                        <div class="carousel-item">
-                            <video autoplay muted loop playsinline preload="metadata" src="vid1.1.mp4"
-                                class="d-block w-100"></video>
-                        </div>
-                        <div class="carousel-item">
-                            <video autoplay muted loop playsinline preload="metadata" src="vid6.mp4"
-                                class="d-block w-100"></video>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                <div class="carousel-item">
+                    <video autoplay muted loop playsinline preload="metadata" src="vid3.mp4"
+                        class="d-block w-100"></video>
+                </div>
+                <div class="carousel-item">
+                    <video autoplay muted loop playsinline preload="metadata" src="vid2.mp4"
+                        class="d-block w-100"></video>
+                </div>
+                <div class="carousel-item">
+                    <video autoplay muted loop playsinline preload="metadata" src="vid1.1.mp4"
+                        class="d-block w-100"></video>
+                </div>
+                <div class="carousel-item">
+                    <video autoplay muted loop playsinline preload="metadata" src="vid6.mp4"
+                        class="d-block w-100"></video>
                 </div>
             </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="title-overlay title-container">
+            <div class="title">SWITZERLAND</div>
+            <a href="#about" class="title-btn btn btn-outline-light btn-lg">Explore More</a>
         </div>
     </div>
+
     <div id="about" class="container my-5" style="text-align: justify;">
         <div class="row">
             <div class="col text-dark">
